@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "env": {
+    "GH_TOKEN": "@gist_counter_gh_token",
+    "GIST_ID": "@gist_counter_gist_id"
+  },
+  "github": {
+    "enabled": false
+  }
+}
