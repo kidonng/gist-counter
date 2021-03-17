@@ -49,7 +49,7 @@ Configure the following environment variables and deploy:
 | `step`  | _number_ |    ❌    | Step of the counter, can be any number (thus `0` makes it read-only), defaults to `1`                                                                                   |
 | `label` | _string_ |    ❌    | Create a badge via [Shields.io](https://shields.io/) if specified. You can also use other [dynamic label parameters](https://shields.io/#dynamic-badge) such as `color` |
 
-## See also
+### See also
 
 - [Hits](https://github.com/dwyl/hits)
 - [visitor-badge](https://github.com/jwenjian/visitor-badge)
