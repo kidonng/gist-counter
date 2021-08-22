@@ -41,7 +41,9 @@ export async function getContributors({
 }
 
 if (import.meta.main) {
-  const match = Deno.args[0]?.match(/github\.com\/(.+?)\/(.+?)\/(?:.+?)\/(.+?)(\/.+)/)
+  const match = Deno.args[0]?.match(
+    /github\.com\/(.+?)\/(.+?)\/(?:.+?)\/(.+?)(\/.+)/
+  )
   if (!match) {
     console.error('Please enter a valid GitHub URL!')
     Deno.exit(1)
