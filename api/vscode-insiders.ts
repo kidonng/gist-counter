@@ -1,6 +1,7 @@
 import { ky, dayjs, ServerRequest } from '../deps.ts'
 
 export default (req: ServerRequest) => {
+  // `req.url` is partial so can't use `new URL`
   const searchParams = new URLSearchParams(
     req.url.substring(req.url.indexOf('?'))
   )

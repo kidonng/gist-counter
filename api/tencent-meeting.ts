@@ -1,6 +1,7 @@
 import { ky, ServerRequest } from '../deps.ts'
 
 export default async (req: ServerRequest) => {
+  // `req.url` is partial so can't use `new URL`
   const searchParams = new URLSearchParams(
     req.url.substring(req.url.indexOf('?'))
   )
